@@ -13,33 +13,6 @@ The Match Scheduler App is designed to allow users to manage and track the statu
 - **React**: Used for building the user interface with state management via hooks (`useState`, `useEffect`).
 - **CSS**: Used for styling the modal and match cards to create a responsive and modern design.
 
-## Setup Instructions
-
-1. **Clone the Repository:**
-   Clone the repository to your local machine using Git:
-   ```bash
-   git clone https://github.com/your-username/match-scheduler-app.git
-   ```
-
-2. **Navigate to the project directory:**
-   ```bash
-   cd match-scheduler-app
-   ```
-
-3. **Install Dependencies:**
-   Install the necessary dependencies using npm or yarn:
-   ```bash
-   npm install
-   ```
-
-4. **Start the Development Server:**
-   Run the development server to launch the app in your browser:
-   ```bash
-   npm start
-   ```
-
-   The app will be accessible at `http://localhost:3000/` in your browser.
-
 ## How It Works
 
 1. **Add a Match**: Click on the "Add Match" button, and a modal will open where you can enter the teams, league, venue, and a countdown timer.
