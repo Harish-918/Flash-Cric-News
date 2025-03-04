@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Match Scheduler App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Problem Statement
+The Match Scheduler App is designed to allow users to manage and track the status of various sports matches. Users can add new upcoming matches with relevant details such as the teams, league, venue, and timer. Once the timer for an upcoming match reaches zero, the match will be marked as "Live" and displayed under live matches. This helps users keep track of both upcoming and live matches in real-time.
 
-## Available Scripts
+## Features
+- **Add New Match**: Users can add new upcoming matches, including details like teams, league, venue, and a timer.
+- **Live Match Update**: Matches are automatically moved to "Live" once the timer reaches zero. A notification is shown when the match becomes live.
+- **Local Storage**: Matches are stored in the browser's local storage to persist the data across sessions.
+- **Responsive Design**: The app is designed to be mobile-friendly and will adjust based on screen size.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: Used for building the user interface with state management via hooks (`useState`, `useEffect`).
+- **CSS**: Used for styling the modal and match cards to create a responsive and modern design.
 
-### `npm start`
+## Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository:**
+   Clone the repository to your local machine using Git:
+   ```bash
+   git clone https://github.com/your-username/match-scheduler-app.git
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Navigate to the project directory:**
+   ```bash
+   cd match-scheduler-app
+   ```
 
-### `npm test`
+3. **Install Dependencies:**
+   Install the necessary dependencies using npm or yarn:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Start the Development Server:**
+   Run the development server to launch the app in your browser:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+   The app will be accessible at `http://localhost:3000/` in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How It Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Add a Match**: Click on the "Add Match" button, and a modal will open where you can enter the teams, league, venue, and a countdown timer.
+   
+2. **Match Timer**: The countdown timer for each upcoming match will decrement every second. Once the timer hits zero, the match will automatically transition to a "Live Match" and show a notification.
+   
+3. **Match Categories**:
+   - **Upcoming Matches**: These matches are displayed with the remaining time until they go live.
+   - **Live Matches**: Matches that have started (timer reaches zero) are shown under "Live Matches."
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Local Storage**: Matches are stored in the browser's local storage, so even if you refresh the page, your matches will persist.
 
-### `npm run eject`
+## Future Improvements
+- **Timer Customization**: Allow users to specify different timer intervals or automatic start times.
+- **Match Results**: Add the ability to input results for matches once they have finished.
+- **User Authentication**: Allow users to create accounts and save their match schedules securely.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Feel free to fork this repository, create a branch, and submit pull requests with improvements or bug fixes.
